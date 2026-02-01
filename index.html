@@ -12,6 +12,8 @@
       color: #fff;
       text-align: center;
     }
+
+    /* Gradient animated header */
     header {
       padding: 40px 20px;
       background: #0d0d0d;
@@ -24,27 +26,36 @@
       top: 0; left: 0; right: 0; bottom: 0;
       background: linear-gradient(270deg, #0044ff, #ffcc00, #0044ff);
       background-size: 600% 600%;
-      animation: gradientMove 10s ease infinite;
+      animation: gradientMove 12s ease infinite;
       z-index: -1;
-      opacity: 0.3;
+      opacity: 0.25;
     }
     @keyframes gradientMove {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
+
     header img {
-      width: 150px;
+      width: 160px;
       margin-bottom: 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
       color: #ffcc00;
+      text-shadow: 0 0 15px #0044ff;
     }
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
     section {
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
+
+    /* Buttons */
     .btn {
       display: inline-block;
       margin: 10px;
@@ -54,13 +65,16 @@
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .btn:hover {
       transform: scale(1.1);
+      box-shadow: 0 0 20px #ffcc00;
     }
+
+    /* Tokenomics & Roadmap */
     .tokenomics, .roadmap {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       text-align: left;
     }
@@ -71,12 +85,33 @@
     }
     table, th, td {
       border: 1px solid #444;
-      padding: 10px;
+      padding: 12px;
     }
+    th {
+      background: #222;
+      color: #ffcc00;
+    }
+
+    /* Community icons */
+    .community-icons {
+      margin-top: 20px;
+    }
+    .community-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      color: #ffcc00;
+      font-size: 1.5em;
+      transition: color 0.3s ease;
+    }
+    .community-icons a:hover {
+      color: #0044ff;
+    }
+
     footer {
       padding: 20px;
       background: #111;
       font-size: 0.9em;
+      border-top: 2px solid #ffcc00;
     }
   </style>
 </head>
@@ -118,6 +153,11 @@
   <section>
     <h2>Community</h2>
     <p>Join us on Telegram, Discord, and Twitter to be part of the ndp4 movement.</p>
+    <div class="community-icons">
+      <a href="#">🐦</a>
+      <a href="#">💬</a>
+      <a href="#">📢</a>
+    </div>
   </section>
 
   <footer>
