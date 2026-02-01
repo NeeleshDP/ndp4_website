@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ndp4 Token</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+      background: #0d0d0d;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(270deg, #0044ff, #ffcc00, #0044ff);
+      background-size: 600% 600%;
+      animation: gradientMove 10s ease infinite;
+      z-index: -1;
+      opacity: 0.3;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffcc00;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #0044ff, #ffcc00);
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
+    .tokenomics, .roadmap {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #444;
+      padding: 10px;
+    }
+    footer {
+      padding: 20px;
+      background: #111;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Transparent logo -->
+    <img src="logo.png" alt="ndp4 Logo">
+    <h1>ndp4 Token</h1>
+    <p>Decentralized Power. Unlimited Possibilities.</p>
+    <a href="#" class="btn">Buy ndp4</a>
+    <a href="#" class="btn">View on Etherscan</a>
+  </header>
+
+  <section>
+    <h2>About ndp4</h2>
+    <p>ndp4 is a next-generation crypto token designed to empower decentralized finance and community-driven innovation.</p>
+  </section>
+
+  <section class="tokenomics">
+    <h2>Tokenomics</h2>
+    <table>
+      <tr><th>Contract Address</th><td>0xFD0E8a812F99a9629b16F59B30791E40861021B3</td></tr>
+      <tr><th>Total Supply</th><td>10,000</td></tr>
+      <tr><th>Distribution</th><td>Community 50% | Dev 20% | Liquidity 30%</td></tr>
+      <tr><th>Utility</th><td>Governance, Staking, Payments</td></tr>
+    </table>
+  </section>
+
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>Q1 2026: Token Launch + Website Live</li>
+      <li>Q2 2026: Exchange Listings + Community Drive</li>
+      <li>Q3 2026: NFT Integration + Partnerships</li>
+      <li>Q4 2026: DAO Launch + Global Expansion</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Community</h2>
+    <p>Join us on Telegram, Discord, and Twitter to be part of the ndp4 movement.</p>
+  </section>
+
+  <footer>
+    © 2026 ndp4 Token. All rights reserved.
+  </footer>
+</body>
+</html>
